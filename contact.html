@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Torah 4 Life LLC</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #2c3e50, #6c3483, #f1c40f, #f7dc6f), url('images/torah-scroll.png') no-repeat center center fixed;
+      background-size: cover;
+      background-blend-mode: overlay;
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen backdrop-blur-sm bg-black/70 flex flex-col justify-between">
+
+  <audio autoplay loop hidden>
+    <source src="Z0000008.MP3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <nav class="flex justify-center mt-6 mb-8 space-x-6 text-lg">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="about.html" class="hover:underline">About</a>
+    <a href="mission.html" class="hover:underline">Mission</a>
+    <a href="vision.html" class="hover:underline">Vision</a>
+    <a href="blog.html" class="hover:underline">Blog</a>
+    <a href="testimonials.html" class="hover:underline">Testimonials</a>
+    <a href="videos.html" class="hover:underline">Videos</a>
+    <a href="newsletter.html" class="hover:underline">Newsletter</a>
+    <a href="contact.html" class="hover:underline font-bold text-yellow-400">Contact</a>
+    <a href="products.html" class="hover:underline">Products</a>
+  </nav>
+
+  <section class="max-w-3xl mx-auto p-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Torah 4 Life LLC</h1>
+    <p class="text-lg mb-6">Have a question, testimony, or want to connect? We'd love to hear from you.</p>
+
+    <form class="bg-white p-6 rounded-xl text-black space-y-4 max-w-md mx-auto">
+      <input type="text" placeholder="Full Name" class="w-full p-2 rounded border" required>
+      <input type="email" placeholder="Email Address" class="w-full p-2 rounded border" required>
+      <textarea placeholder="Your Message" rows="5" class="w-full p-2 rounded border" required></textarea>
+      <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <footer class="text-center p-6 text-sm text-yellow-200 mt-10">
+    <p class="italic">Torah 4 Life LLC – ...Till heaven and earth pass away...</p>
+  </footer>
+</body>
+</html>
