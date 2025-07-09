@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Products – Torah 4 Life LLC</title>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
   <style>
@@ -17,97 +17,94 @@
     nav {
       display: flex;
       justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
+      gap: 20px;
+      padding: 20px;
+      font-size: 1.2rem;
     }
     nav a {
       color: white;
       text-decoration: none;
-      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
-      padding: 2rem;
+      padding: 40px 20px;
     }
-    h1 {
+    .title {
       text-align: center;
       font-size: 2.5rem;
-      color: #f7dc6f;
+      color: #f1c40f;
+      margin-bottom: 10px;
     }
-    .product-grid {
+    .subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
     }
     .product {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      border-radius: 12px;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
       text-align: center;
     }
     .product img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .product h2 {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #f1c40f;
-    }
-    .product p {
-      font-size: 1rem;
-      color: #ffffff;
-    }
-    .payment-buttons {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .payment-buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
+      max-width: 100%;
+      height: auto;
       border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-    }
-    .cashapp {
-      background-color: #00c244;
-    }
-    .paypal {
-      background-color: #0070ba;
-    }
-    .shopify {
-      background-color: #f1c40f;
-      color: black;
+      margin-bottom: 10px;
     }
     form {
-      margin-top: 3rem;
-      padding: 2rem;
-      background-color: rgba(0,0,0,0.5);
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
       border-radius: 10px;
+      margin-top: 40px;
+    }
+    form h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #f1c40f;
     }
     form label {
-      font-weight: bold;
+      display: block;
+      margin: 15px 0 5px;
     }
-    form input, form select, form textarea {
+    form input, form textarea {
       width: 100%;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      border-radius: 6px;
+      padding: 10px;
       border: none;
+      border-radius: 6px;
+      font-size: 1rem;
     }
-    form button {
-      padding: 0.75rem 1.5rem;
-      background-color: #f1c40f;
-      border: none;
-      color: black;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
+    .form-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+    .form-buttons a {
+      background: #27ae60;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .form-buttons a:hover {
+      background: #219150;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #f7dc6f;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -125,81 +122,52 @@
   </nav>
 
   <div class="container">
-    <h1>Shop Torah-Centered Living</h1>
-    <div class="product-grid">
+    <h1 class="title">Shop Torah-Centered Living</h1>
+    <p class="subtitle">Place your order directly below or visit our full online store.</p>
+
+    <div class="grid">
       <div class="product">
-        <img src="images/unisex-heavy-blend-hoodie-navy-front-68367dec9163f.jpg" alt="Hoodie">
-        <h2>Torah Hoodie (Navy)</h2>
-        <p>$48.00</p>
+        <img src="images/unisex-heavy-blend-hoodie-black-front-68368a7dcb5ff.jpg" alt="Torah Hoodie">
+        <h3>Torah Hoodie (Black)</h3>
+        <p>$48.99</p>
       </div>
       <div class="product">
-        <img src="images/unisex-classic-tee-navy-front-683672089fd0c.jpg" alt="T-Shirt">
-        <h2>Torah T-Shirt</h2>
-        <p>$27.00</p>
+        <img src="images/unisex-classic-tee-navy-front-683672089fd0c.jpg" alt="Torah Tee">
+        <h3>Torah T-Shirt (Navy)</h3>
+        <p>$27.99</p>
       </div>
       <div class="product">
         <img src="images/jpg2.jpg" alt="Torah Mug">
-        <h2>Torah Mug (15oz)</h2>
+        <h3>Torah Cup (15oz)</h3>
         <p>$21.99</p>
       </div>
-      <div class="product">
-        <img src="images/large-eco-tote-oyster-front-683673e8a327c.jpg" alt="Large Eco Tote">
-        <h2>Large Eco Tote</h2>
-        <p>$34.00</p>
-      </div>
-      <div class="product">
-        <img src="images/eco-tote-bag-oyster-front-68368c4dd1aa2.png" alt="Small Eco Tote">
-        <h2>Eco Tote (Small)</h2>
-        <p>$26.00</p>
-      </div>
-      <div class="product">
-        <img src="images/organic-denim-tote-bag-denim-blue-right-front-683672f748769.jpg" alt="Denim Tote">
-        <h2>Denim Tote</h2>
-        <p>$32.00</p>
-      </div>
-      <div class="product">
-        <img src="images/classic-dad-hat-navy-right-front-68365d7e2fd92.jpg" alt="Dad Hat">
-        <h2>Torah Dad Hat</h2>
-        <p>$28.00</p>
-      </div>
     </div>
 
-    <div class="payment-buttons">
-      <a href="https://cash.app/$Vangoldberg" class="cashapp">Pay with Cash App</a>
-      <a href="https://www.paypal.com/paypalme/vangoldbergd" class="paypal">Pay with PayPal</a>
-      <a href="https://torah4lifellc.myshopify.com" class="shopify">Visit Full Store</a>
-    </div>
-
-    <form name="order" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="order" />
-      <h2>How to Order (Direct)</h2>
-      <label for="name">Full Name*</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email Address*</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="item">Item Name</label>
-      <input type="text" id="item" name="item">
-
+    <form name="order-form" method="POST" data-netlify="true">
+      <h2>How to Order</h2>
+      <input type="hidden" name="form-name" value="order-form" />
+      <label for="name">Name</label>
+      <input type="text" name="name" required>
+      <label for="item">Item</label>
+      <input type="text" name="item" required>
       <label for="size">Size</label>
-      <select id="size" name="size">
-        <option value="">Select size</option>
-        <option>S</option><option>M</option><option>L</option>
-        <option>XL</option><option>2XL</option><option>3XL</option><option>4XL</option>
-      </select>
-
+      <input type="text" name="size">
       <label for="quantity">Quantity</label>
-      <input type="number" id="quantity" name="quantity" min="1">
-
+      <input type="number" name="quantity" min="1" required>
       <label for="address">Shipping Address</label>
-      <textarea id="address" name="address" rows="3"></textarea>
+      <textarea name="address" rows="4" required></textarea>
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
 
-      <label for="notes">Notes (Optional)</label>
-      <textarea id="notes" name="notes" rows="2"></textarea>
-
-      <button type="submit">Submit Order</button>
+      <div class="form-buttons">
+        <a href="https://cash.app/$Vangoldberg" target="_blank">Pay with Cash App</a>
+        <a href="https://www.paypal.com/paypalme/vangoldbergd" target="_blank">Pay with PayPal</a>
+      </div>
     </form>
   </div>
+
+  <footer>
+    Torah 4 Life LLC – ...Till heaven and earth pass away...
+  </footer>
 </body>
 </html>
