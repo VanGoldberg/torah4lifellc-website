@@ -161,9 +161,23 @@
 
       <div class="form-buttons">
         <a href="https://cash.app/$Vangoldberg" target="_blank">Pay with Cash App</a>
-        <a href="https://www.paypal.com/paypalme/vangoldbergd" target="_blank">Pay with PayPal</a>
+        <a href="https://torah4lifellc.myshopify.com" target="_blank">Visit Full Store</a>
       </div>
     </form>
+
+    <!-- PayPal Hosted Button Section -->
+    <section style="text-align: center; margin-top: 2rem;">
+      <script 
+        src="https://www.paypal.com/sdk/js?client-id=BAAJ-A0Uz98LIhUfsDtRyEZ18z2rgeCgXz3VKf11vXqJZR6Yc3fJxWTk-AvMK4ghUj1hnUDOnblHP0o428&components=hosted-buttons&enable-funding=venmo&currency=USD">
+      </script>
+      <div id="paypal-container-ZM2BWQVDA2K9Q"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "ZM2BWQVDA2K9Q",
+        }).render("#paypal-container-ZM2BWQVDA2K9Q");
+      </script>
+    </section>
+
   </div>
 
   <footer>
