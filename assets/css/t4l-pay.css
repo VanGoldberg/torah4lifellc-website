@@ -66,3 +66,30 @@
     display: block;
 }
 
+/* Secure Payment Badge styling */
+.t4l-secure-badge {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.t4l-secure-badge img {
+    max-width: 140px;
+    height: auto;
+}
+
+/* Secure Payment Badge styling */
+.t4l-secure-badge {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(91, 175, 255, 0.15), rgba(163, 125, 255, 0.15));
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.t4l-secure-badge img {
+    max-width: 140px;
+    height: auto;
+}
