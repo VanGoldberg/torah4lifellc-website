@@ -35,12 +35,15 @@
 }
 
 .t4l-qr img {
-  width: 180px;
-  max-width: 60vw; /* mobile-friendly scaling */
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 180px;   /* keeps it from blowing up */
+  width: 100%;        /* allows it to shrink on mobile */
+  height: auto;       /* keeps proportions correct */
+  display: block;     /* centers with margin auto */
+  margin: 0 auto;
+  border-radius: 8px; /* optional: slightly rounded edges */
+  box-shadow: 0 0 12px rgba(0,0,0,0.2); /* optional: subtle glow */
 }
+
 
 .t4l-qr-caption {
   font-size: 0.95rem;
