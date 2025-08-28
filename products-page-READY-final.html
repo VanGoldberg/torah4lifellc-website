@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Torah 4 Life LLC — Products</title>
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/assets/css/t4l-pay.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
+
+  <!-- PayPal SDK (load ONCE per page) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAJ-A0Uz98LIhUfsDtRyEZ18z2rgeCgXz3VKf11vXqJZR6Yc3fJxWTk-AvMK4ghUj1hnUDOnblHP0o428&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+
+  <style>
+    body{font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans';margin:0;background:#fafafa;color:#111}
+    header{background:#0f172a;color:#fff;padding:1rem 1.25rem}
+    main{max-width:1100px;margin:0 auto;padding:1.25rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+    .card{background:#fff;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:1rem}
+    .card h3{margin:.25rem 0 .5rem;color:#1f2937}
+    .card p{margin:.25rem 0 .5rem;color:#374151}
+    .price{color:#6b7280;font-weight:600}
+    .t4l-help{font-size:.95rem;color:#374151;margin:.5rem 0 0}
+    .t4l-help a{color:#3b2e7e;text-decoration:underline}
+    .t4l-help a:hover{opacity:.9}
+    .pp-wrap{margin-top:.5rem}
+  </style>
+</head>
+<body>
+<header><h1>Torah 4 Life LLC — Products</h1></header>
+
+<main>
+  <section>
+    <p>Choose your items below. You can pay securely with PayPal using the buttons or QR code.</p>
+    <div class="grid">
+
+      <!-- Hoodie -->
+      <article class="card" id="hoodie">
+        <h3>Torah Hoodie</h3>
+        <p class="price">$39.99</p>
+        <p>Soft, warm, Torah-inspired design.</p>
+        <div class="pp-wrap">
+          <div id="paypal-container-45JBDN8937TUU"></div>
+          <script>
+            paypal.HostedButtons({ hostedButtonId: "45JBDN8937TUU" })
+                  .render("#paypal-container-45JBDN8937TUU");
+          </script>
+        </div>
+        <p class="t4l-help">Need a custom order or help?
+          <a href="#custom-order" class="prefill-form" data-product="Torah Hoodie">Open request form</a>
+        </p>
+      </article>
+
+      <!-- T-Shirt -->
+      <article class="card" id="tshirt">
+        <h3>Torah T‑Shirt</h3>
+        <p class="price">$27.99</p>
+        <p>Classic fit, vibrant print.</p>
+        <div class="pp-wrap">
+          <div id="paypal-container-HJMT3Y8V8ED8A"></div>
+          <script>
+            paypal.HostedButtons({ hostedButtonId: "HJMT3Y8V8ED8A" })
+                  .render("#paypal-container-HJMT3Y8V8ED8A");
+          </script>
+        </div>
+        <p class="t4l-help">Need a custom order or help?
+          <a href="#custom-order" class="prefill-form" data-product="Torah T‑Shirt">Open request form</a>
+        </p>
+      </article>
+
+      <!-- Cup / Mug -->
+      <article class="card" id="cup">
+        <h3>Torah Cup (15oz)</h3>
+        <p class="price">$18.00</p>
+        <p>Ceramic mug, dishwasher & microwave safe.</p>
+        <div class="pp-wrap">
+          <div id="paypal-container-EVBQEXXR6JLUW"></div>
+          <script>
+            paypal.HostedButtons({ hostedButtonId: "EVBQEXXR6JLUW" })
+                  .render("#paypal-container-EVBQEXXR6JLUW");
+          </script>
+        </div>
+        <p class="t4l-help">Need a custom order or help?
+          <a href="#custom-order" class="prefill-form" data-product="Torah Cup (15oz)">Open request form</a>
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Pay with PayPal section: Button already present elsewhere; here we keep QR + badge -->
+  <section class="t4l-pay" style="margin-top:2rem">
+    <h2 class="t4l-head">Pay with PayPal</h2>
+    <a class="t4l-btn" href="https://www.paypal.com/ncp/payment/9N76X8G6T6E66" target="_blank" rel="noopener">
+      Pay Now — PayPal
+    </a>
+
+    <div class="t4l-qr">
+      <img src="/payments/paypal_payment_qr.png" alt="Scan to pay Torah 4 Life LLC via PayPal" loading="lazy">
+      <p class="t4l-qr-caption">Prefer to scan? Open your camera and scan this QR to pay securely.</p>
+    </div>
+
+    <div class="t4l-secure-badge">
+      <img src="/payments/paypal-secure-badge-small.png" alt="Secure Payment via PayPal" loading="lazy">
+    </div>
+  </section>
+
+  <hr style="margin:2rem 0;">
+
+  <!-- Custom Order / Assistance (Netlify Forms) -->
+  <section id="custom-order" class="product-block">
+    <h3>Custom Order / Assistance</h3>
+    <p>For immediate purchase, please use the Buy buttons above. Use this form only for special requests or if you need help.</p>
+
+    <form name="custom-order" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="custom-order">
+      <p style="display:none;">
+        <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+      </p>
+
+      <label>Full Name<br>
+        <input type="text" name="name" required>
+      </label><br>
+
+      <label>Email<br>
+        <input type="email" name="email" required>
+      </label><br>
+
+      <label>Phone (optional)<br>
+        <input type="tel" name="phone">
+      </label><br>
+
+      <label>Product<br>
+        <input type="text" id="co-product" name="product" placeholder="e.g., Torah Hoodie" required>
+      </label><br>
+
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <label>Size<br>
+          <select id="co-size" name="size">
+            <option value="">Select</option>
+            <option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+          </select>
+        </label>
+
+        <label>Color<br>
+          <select id="co-color" name="color">
+            <option value="">Select</option>
+            <option>Black</option><option>White</option><option>Navy</option><option>Heather Gray</option>
+          </select>
+        </label>
+
+        <label>Qty<br>
+          <input type="number" id="co-qty" name="quantity" min="1" value="1" style="width:80px">
+        </label>
+      </div>
+
+      <label>Notes (custom text, deadlines, etc.)<br>
+        <textarea name="notes" rows="3"></textarea>
+      </label><br>
+
+      <button type="submit" class="t4l-btn">Send Request</button>
+    </form>
+  </section>
+</main>
+
+<!-- Prefill helper -->
+<script>
+  (function () {
+    const links = document.querySelectorAll('.prefill-form');
+    const prodInput = document.getElementById('co-product');
+    const sizeSel   = document.getElementById('co-size');
+    const colorSel  = document.getElementById('co-color');
+    const qtyInput  = document.getElementById('co-qty');
+
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        const p = this.getAttribute('data-product') || '';
+        if (prodInput) prodInput.value = p;
+        if (p.includes('Hoodie')) { if (colorSel) colorSel.value = 'Black'; if (qtyInput) qtyInput.value = 1; }
+        if (p.includes('Cup'))    { if (colorSel) colorSel.value = '';     if (qtyInput) qtyInput.value = 1; }
+        if (p.includes('T‑Shirt')){ if (colorSel) colorSel.value = 'White';if (qtyInput) qtyInput.value = 1; }
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
